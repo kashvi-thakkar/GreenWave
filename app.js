@@ -13,6 +13,7 @@ import Cart from "./models/Cart.js";
 import Order from "./models/Order.js";
 
 import defaultProducts from "./defaultProducts.js";
+require('dotenv').config();
 
 const app = express();
 
@@ -36,9 +37,13 @@ async function createAdminUser() {
   }
 }
 
-mongoose.connect("mongodb://localhost:27017/greenwave").then(async () => {
-  await createAdminUser();
-});
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => console.log("Connected to MongoDB Atlas"))
+.catch((err) => console.error("MongoDB connection error:", err));
+
 
 app.set("view engine", "ejs");
 app.use(expressLayouts);
