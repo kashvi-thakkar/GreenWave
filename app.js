@@ -37,12 +37,15 @@ async function createAdminUser() {
   }
 }
 
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
-.then(() => console.log("Connected to MongoDB Atlas"))
-.catch((err) => console.error("MongoDB connection error:", err));
+mongoose.connect(
+  "mongodb+srv://greenwave_admin:greenwave1604@greenwavecluster.yhk08ed.mongodb.net/GreenWaveDB?retryWrites=true&w=majority&appName=GreenWaveCluster",
+  { useNewUrlParser: true, useUnifiedTopology: true }
+).then(async () => {
+  console.log("Connected to MongoDB Atlas");
+  await createAdminUser();
+}).catch(err => {
+  console.error("DB Connection Error:", err);
+});
 
 
 app.set("view engine", "ejs");
