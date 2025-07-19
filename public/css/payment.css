@@ -1,0 +1,46 @@
+.payment-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payment-card .card-body {
+  padding: 2rem;
+}
+
+.payment-page h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.payment-page .form-label {
+  font-weight: 600;
+  color: #555;
+}
+
+.payment-page .form-control {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+}
+
+.payment-page .form-control:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.payment-page .btn-success {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.payment-page .btn-success:hover {
+  background-color: #45a049;
+  border-color: #45a049;
+}
+
+.payment-page .form-check-input:checked {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}

@@ -1,0 +1,172 @@
+<section class="payment-section light-card">
+  <div class="container payment-page">
+    <h1 class="payment-title text-center mb-4">Payment</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card payment-card shadow-sm">
+          <div class="card-body">
+            <form action="/payment" method="POST">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3 class="mb-3">BILLING ADDRESS</h3>
+                  <div class="mb-3">
+                    <label for="billingName" class="form-label"
+                      >Full Name:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="billingName"
+                      name="billingName"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="billingEmail" class="form-label">Email:</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="billingEmail"
+                      name="billingEmail"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="billingAddress" class="form-label"
+                      >Address:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="billingAddress"
+                      name="billingAddress"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="billingCity" class="form-label">City:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="billingCity"
+                      name="billingCity"
+                      required
+                    />
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="billingState" class="form-label"
+                        >State:</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="billingState"
+                        name="billingState"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="billingZip" class="form-label"
+                        >Zip Code:</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="billingZip"
+                        name="billingZip"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h3 class="mb-3">SHIPPING ADDRESS</h3>
+                  <div class="mb-3">
+                    <label for="shippingName" class="form-label"
+                      >Full Name:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="shippingName"
+                      name="shippingName"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="shippingAddress" class="form-label"
+                      >Address:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="shippingAddress"
+                      name="shippingAddress"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="shippingCity" class="form-label">City:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="shippingCity"
+                      name="shippingCity"
+                      required
+                    />
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="shippingState" class="form-label"
+                        >State:</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="shippingState"
+                        name="shippingState"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="shippingZip" class="form-label"
+                        >Zip Code:</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="shippingZip"
+                        name="shippingZip"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-4">
+                <h3 class="mb-3">PAYMENT METHOD</h3>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="paymentMethod"
+                    id="cashOnDelivery"
+                    value="Cash on Delivery"
+                    checked
+                  />
+                  <label class="form-check-label" for="cashOnDelivery">
+                    Cash On Delivery
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-success btn-lg w-100 mt-4">
+                Proceed To Checkout
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

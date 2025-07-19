@@ -1,0 +1,94 @@
+<style>
+  body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+  }
+</style>
+
+<div class="row justify-content-center">
+  <div class="col-md-6 col-lg-4">
+    <div class="card shadow">
+      <div class="card-body p-5">
+        <h2 class="card-title text-center mb-4">Registration</h2>
+        <form action="/register" method="POST">
+          <div class="mb-3 position-relative">
+            <input
+              type="text"
+              class="form-control ps-5"
+              id="firstName"
+              name="firstName"
+              placeholder="Enter your First name"
+              required
+            />
+            <i
+              class="fas fa-user position-absolute top-50 start-0 translate-middle-y ms-2 text-muted"
+            ></i>
+          </div>
+          <div class="mb-3 position-relative">
+            <input
+              type="text"
+              class="form-control ps-5"
+              id="lastName"
+              name="lastName"
+              placeholder="Enter your Last name"
+              required
+            />
+            <i
+              class="fas fa-user position-absolute top-50 start-0 translate-middle-y ms-2 text-muted"
+            ></i>
+          </div>
+          <div class="mb-3 position-relative">
+            <input
+              type="email"
+              class="form-control ps-5"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+            <i
+              class="fas fa-envelope position-absolute top-50 start-0 translate-middle-y ms-2 text-muted"
+            ></i>
+          </div>
+          <div class="mb-3 position-relative">
+            <input
+              type="password"
+              class="form-control ps-5 pe-5"
+              id="password"
+              name="password"
+              placeholder="Create a password"
+              required
+            />
+            <i
+              class="fas fa-lock position-absolute top-50 start-0 translate-middle-y ms-2 text-muted"
+            ></i>
+            <i
+              class="fas fa-eye position-absolute top-50 end-0 translate-middle-y me-2 text-muted toggle-password"
+              style="cursor: pointer"
+            ></i>
+          </div>
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="terms"
+              required
+            />
+            <label class="form-check-label" for="terms"
+              >I accept all terms and conditions</label
+            >
+          </div>
+          <button type="submit" class="btn btn-success w-100 mb-3">
+            Signup
+          </button>
+        </form>
+        <p class="text-center mb-0">
+          Already a member?
+          <a href="/login" class="text-decoration-none text-warning"
+            >Login Now</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
